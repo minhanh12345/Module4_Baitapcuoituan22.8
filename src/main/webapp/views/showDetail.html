@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <form method="post">
+    <tr>
+        <td>ID</td>
+        <td>Name</td>
+        <td>Age</td>
+        <td>Salary</td>
+        <td>Branch</td>
+    </tr>
+    <tr>
+        <td th:text="${staff.staff_id}"></td>
+        <td th:text="${staff.staff_name}"></td>
+        <td th:text="${staff.staff_age}"></td>
+        <td th:text="${staff.staff_salary}"></td>
+        <td th:text="${staff.staff_branch}"></td>
+
+    </tr>
+        <button type="submit"> Back Show</button>
+    </form>
+</table>
+</body>
+</html>
